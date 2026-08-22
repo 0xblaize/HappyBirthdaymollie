@@ -1,25 +1,25 @@
- // Reasons database
- const reasons = [
-    { 
-        text: "You’re such a kind and wonderful person, and I feel lucky to share such a good bond with you. 💖", 
-        emoji: "🌟",
-        gif: "gif1.gif"
-    },
-    { 
-        text: "May your day be filled with love, laughter, and endless joy. 🌸 ", 
-        emoji: "💗",
-        gif: "gif2.gif"
-    },
-    { 
-        text: "Wishing you success, happiness, and everything your heart desires. ✨ ", 
-        emoji: "💕",
-        gif: "gif1.gif"
-    },
-    { 
-        text: "Stay the amazing girl you are—always spreading positivity around. Have the happiest year ahead! 🥳 ", 
-        emoji: "🌟",
-        gif: "gif2.gif"
-    }
+// Reasons database (personalized for Mollie)
+const reasons = [
+   { 
+       text: "Mollie, your smile lights up my whole world — I love you more each day. 💖", 
+       emoji: "🌟",
+       gif: "gif1.gif"
+   },
+   { 
+       text: "You make every moment fun and meaningful. Thank you for being you, babe. 🌸", 
+       emoji: "💗",
+       gif: "gif2.gif"
+   },
+   { 
+       text: "I’m proud of everything you are and everything you’ll become. I’ll always be beside you. ✨", 
+       emoji: "💕",
+       gif: "gif3.gif"
+   },
+   { 
+       text: "Happy birthday to my best friend and my love — Imaobong loves you endlessly. 🥳", 
+       emoji: "💖",
+       gif: "gif4.gif"
+   }
 ];
 
 // State management
@@ -40,7 +40,7 @@ function createReasonCard(reason) {
     
     const gifOverlay = document.createElement('div');
     gifOverlay.className = 'gif-overlay';
-    gifOverlay.innerHTML = `<img src="${reason.gif}" alt="Friendship Memory">`;
+    gifOverlay.innerHTML = `<img src="${reason.gif}" alt="Memory GIF">`;
     
     card.appendChild(text);
     card.appendChild(gifOverlay);
